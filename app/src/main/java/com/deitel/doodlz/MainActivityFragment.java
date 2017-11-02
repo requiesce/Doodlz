@@ -160,6 +160,11 @@ public class MainActivityFragment extends Fragment {
             backgroundColorDialog.show(getFragmentManager(), "background color dialog");
             return true;
 
+         case R.id.background_image:
+            BackgroundColorFragment backgroundImageDialog = new BackgroundColorFragment();
+            backgroundImageDialog.show(getFragmentManager(), "background image dialog");
+            return true;
+
          case R.id.delete_drawing:
             confirmErase(); // confirm before erasing image
             return true; // consume the menu event
